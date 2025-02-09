@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="nunta.css">
 </head>
 <body>
+    document.addEventListener("click", function () {
+    const audio = document.getElementById("background-music");
+
+    if (audio.paused) {
+        audio.play().catch(error => {
+            console.log("Autoplay blocat, utilizatorul trebuie să interacționeze.");
+        });
+    }
+}, { once: true }); // Rulează doar la primul click
+
     <header>
         <img src="images/imagine-header.jpg" alt="Imagine de Header" style="width: 100%; height: auto;">
         <h1>Nunta noastră</h1>
