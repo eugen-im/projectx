@@ -172,6 +172,10 @@ section p {
     padding: 0;
 }
 
+.center-text {
+  text-align: center;
+}
+
 #contact li {
     font-size: 1.2em;
 }
