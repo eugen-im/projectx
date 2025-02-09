@@ -12,7 +12,7 @@ body {
 /* Stiluri pentru header */
 header {
     /* Setează imaginea de fundal */
-    background-image: url('/home/eugen/Desktop/webx/himg.png');
+    background-image: url('himg.png');
     /* Asigură că imaginea acoperă întregul header */
     background-size: cover;
     /* Poziționează imaginea în centrul header-ului */
