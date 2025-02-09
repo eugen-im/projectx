@@ -12,7 +12,7 @@ body {
 /* Stiluri pentru header */
 header {
     /* Setează imaginea de fundal */
-    background-image: url('himg.png');
+    background-image: url('head1.jpg');
     /* Asigură că imaginea acoperă întregul header */
     background-size: cover;
     /* Poziționează imaginea în centrul header-ului */
