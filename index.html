@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nunta noastră</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #f7c2b2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nuntea noastră</h1>
+    <p>Vă așteptăm cu drag la evenimentul nostru special!</p>
+</header>
+
+<nav>
+    <a href="#invitatia">Invitație</a>
+    <a href="#detalii">Detalii Eveniment</a>
+    <a href="#galerie">Galerie Foto</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="invitatia">
+    <h2>Invitație</h2>
+    <p>Vă invităm să fiți alături de noi într-o zi de neuitat. Detaliile despre locație și programul nunții le găsiți mai jos.</p>
+</section>
+
+<section id="detalii">
+    <h2>Detalii Eveniment</h2>
+    <ul>
+        <li><strong>Data:</strong> 20 iunie 2025</li>
+        <li><strong>Locația:</strong> Restaurantul „Palatul Tradițiilor”</li>
+        <li><strong>Ora:</strong> 17:00</li>
+    </ul>
+</section>
+
+<section id="galerie">
+    <h2>Galerie Foto</h2>
+    <p>Aici vor apărea poze cu momente speciale din ziua nunții.</p>
+<section id="galerie">
+    <div class="gallery">
+        <img src="images/photo1.jpg" alt="Nunta 1" class="gallery-item">
+        <img src="images/photo2.jpg" alt="Nunta 2" class="gallery-item">
+        <img src="images/photo3.jpg" alt="Nunta 3" class="gallery-item">
+        <img src="images/photo4.jpg" alt="Nunta 4" class="gallery-item">
+        <img src="images/photo5.jpg" alt="Nunta 5" class="gallery-item">
+        <img src="images/photo6.jpg" alt="Nunta 6" class="gallery-item">
+    </div>
+
+    <!-- Lightbox pentru a mări pozele -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+</section>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Pentru detalii suplimentare, nu ezitați să ne contactați la:</p>
+    <ul>
+        <li>Email: exemplu@example.com</li>
+        <li>Telefon: +40 123 456 789</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Nunta noastră - Toate drepturile rezervate</p>
+</footer>
+    <script src="nunta.js"></script>
+</body>
+</html>
+

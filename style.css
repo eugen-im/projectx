@@ -1,0 +1,194 @@
+/* Importarea fonturilor de la Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Stiluri pentru header */
+header {
+    /* Setează imaginea de fundal */
+    background-image: url('/home/eugen/Desktop/webx/himg.png');
+    /* Asigură că imaginea acoperă întregul header */
+    background-size: cover;
+    /* Poziționează imaginea în centrul header-ului */
+    background-position: center;
+    /* Previne repetarea imaginii */
+    background-repeat: no-repeat;
+    
+    /* Alte stilizări pentru header */
+    height: 400px; /* Ajustează înălțimea în funcție de preferințe */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7c2b2;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Navigație */
+nav {
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    font-family: 'Playfair Display', serif;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #f7c2b2;
+}
+
+/* Stil pentru containerul galeriei */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Stil pentru fiecare imagine */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Galerie foto */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Lightbox (fereastra pop-up pentru imaginea mărită) */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+/* Buton de închidere */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+/* Secțiuni */
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    color: #f7c2b2;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Galerie foto */
+#galerie img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact */
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact li {
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
