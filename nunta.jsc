@@ -1,66 +1,31 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nunta noastră</title>
-    <link rel="stylesheet" href="nunta.css">
-</head>
-<body>
-    <header>
-        <img src="images/imagine-header.jpg" alt="Imagine de Header" style="width: 100%; height: auto;">
-        <h1>Nunta noastră</h1>
-        <p>Vă așteptăm cu drag la evenimentul nostru special!</p>
-    </header>
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".gallery-item");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".close");
 
-    <nav>
-        <a href="#invitatia">Invitație</a>
-        <a href="#detalii">Detalii Eveniment</a>
-        <a href="#galerie">Galerie Foto</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    // Deschide lightbox-ul când dai click pe o imagine
+    images.forEach(img => {
+        img.addEventListener("click", function () {
+            lightbox.style.display = "flex";
+            lightboxImg.src = this.src;
+        });
+    });
 
-    <section id="invitatia">
-        <h2>Invitație</h2>
-        <p>Vă invităm să fiți alături de noi într-o zi de neuitat.</p>
-    </section>
+    // Închide lightbox-ul când se dă click pe butonul "X"
+    closeBtn.addEventListener("click", function () {
+        lightbox.style.display = "none";
+    });
 
-    <section id="detalii">
-        <h2>Detalii Eveniment</h2>
-        <ul>
-            <li><strong>Data:</strong> 20 iunie 2025</li>
-            <li><strong>Locația:</strong> Restaurantul „Palatul Tradițiilor”</li>
-            <li><strong>Ora:</strong> 17:00</li>
-        </ul>
-    </section>
+    // Închide lightbox-ul la click oriunde în afara imaginii
+    lightbox.addEventListener("click", function (e) {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = "none";
+        }
+    });
+});
 
-    <section id="galerie">
-        <h2>Galerie Foto</h2>
-        <p>Aici vor apărea poze cu momente speciale din ziua nunții.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Pentru detalii suplimentare, nu ezitați să ne contactați:</p>
-        <ul>
-            <li>Email: exemplu@example.com</li>
-            <li>Telefon: +40 123 456 789</li>
-        </ul>
-    </section>
-
-    <!-- Element pentru afișarea countdown-ului -->
-    <section id="countdown-section">
-        <h2>Numărătoare inversă până la eveniment</h2>
-        <div id="countdown" style="font-size: 1.5em; text-align: center;"></div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Nunta noastră - Toate drepturile rezervate</p>
-    </footer>
-
-    <!-- Include fișierul JavaScript -->
-    <script src="nunta.js"></script>
-    document.addEventListener("click", function () {
+document.addEventListener("click", function () {
     const audio = document.getElementById("background-music");
 
     if (audio.paused) {
@@ -69,7 +34,3 @@
         });
     }
 }, { once: true }); // Rulează doar la primul click
-
-</body>
-</html>
-
