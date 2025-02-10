@@ -12,7 +12,7 @@ body {
 /* Stiluri pentru header */
 header {
     /* Setează imaginea de fundal */
-    background-image: url('head1.jpg');
+    background-image: url('banimg.jpg');
     /* Asigură că imaginea acoperă întregul header */
     background-size: cover;
     /* Poziționează imaginea în centrul header-ului */
@@ -38,14 +38,16 @@ header {
 
 header h1 {
     color: #f7c2b2;
-    font-size: 4em;
+    font-size: 5em;
     margin: 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Umbra textului */
 }
 
 header p {
     color: #f7c2b2;
-    font-size: 2em;
+    font-size: 3em;
     margin-top: 10px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5); /* Umbra textului */
 }
 
 /* Navigație */
