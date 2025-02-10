@@ -62,6 +62,7 @@ header p {
     max-width: 600px; /* Limitează lățimea imaginii */
     border-radius: 10px; /* Colțuri rotunjite pentru un efect elegant */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Umbră pentru un efect vizual plăcut */
+}
 
 /* Navigație */
 nav {
