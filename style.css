@@ -38,9 +38,9 @@ header {
 
 header h1 {
     color: #f7c2b2;
-    font-size: 5em;
+    font-size: 4em;
     margin: 0;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Umbra textului */
+    text-shadow: 2.5px 3px 5px rgba(0, 0, 0, 0.5); /* Umbra textului */
 }
 
 header p {
