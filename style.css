@@ -64,24 +64,48 @@ header p {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Umbră pentru un efect vizual plăcut */
 }
 
-/* Navigație */
+/* Stilizare navbar */
 nav {
-    background-color: #f1f1f1;
-    padding: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center; /* Centrează butoanele */
+    gap: 15px; /* Spațiu între butoane */
+    padding: 10px;
+    background-color: #ff6f61; /* Culoare fundal navbar */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efect de umbră */
 }
 
-nav a {
-    font-family: 'Playfair Display', serif;
-    margin: 0 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 700;
+/* Stilizare butoane */
+.nav-btn {
+    text-decoration: none; /* Elimină sublinierea */
+    background: white; /* Fundal alb */
+    color: #ff6f61; /* Culoare text */
+    padding: 10px 20px; /* Dimensiune buton */
     font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 30px; /* Colțuri rotunjite */
+    transition: 0.3s ease-in-out;
+    border: 2px solid white; /* Contur alb */
 }
 
-nav a:hover {
-    color: #f7c2b2;
+/* Efect la hover */
+.nav-btn:hover {
+    background: #ff483f; /* Schimbă culoarea de fundal */
+    color: white;
+    border: 2px solid white;
+    transform: scale(1.1); /* Mărește butonul */
+}
+
+/* Responsivitate pentru ecrane mici */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Butoanele pe verticală */
+        align-items: center; /* Centrează butoanele */
+    }
+
+    .nav-btn {
+        width: 80%; /* Butoanele mai mari */
+        text-align: center;
+    }
 }
 
 /* Stil pentru containerul galeriei */
