@@ -89,7 +89,7 @@ nav {
 
 /* Efect la hover */
 .nav-btn:hover {
-    background: #ff483f; /* Schimbă culoarea de fundal */
+    background: #f7c2b2; /* Schimbă culoarea de fundal */
     color: white;
     border: 2px solid white;
     transform: scale(1.1); /* Mărește butonul */
